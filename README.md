@@ -1,24 +1,4 @@
-# worldofshreyas
-
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# World of Shreyas
+![Deploy to Github Pages](https://github.com/the-http-418/worldofshreyas/workflows/Deploy%20to%20Github%20Pages/badge.svg)
+---
+The offical website of Shreyas
