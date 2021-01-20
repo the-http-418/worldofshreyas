@@ -1,7 +1,9 @@
 <template>
   <div class="videos">
     <h2>Here are some of my latest videos</h2>
-    <VideoEmbedd urlvid="https://www.youtube.com/embed/6zX2ExuBcCE"/>
+    <div v-for="item in urls" :key="item.url">
+        <video-embedd :urlvid="'https://www.youtube.com/embed/'+item.url"/>
+    </div>
   </div>
 </template>
 
@@ -12,6 +14,11 @@ export default {
   name: "Videos",
   components:{
       VideoEmbedd
+  },
+  data(){
+      return{
+          urls:urls
+      }
   }
 };
 console.log(urls);
