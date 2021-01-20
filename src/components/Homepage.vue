@@ -2,20 +2,22 @@
   <div class="hello">
     <img id="heropic" alt="Shreyas Dabbing" src="../assets/shreyasDab.jpg"/>
     <h1>Hi guys, I'm Shreyas!</h1>
-    <h2>
-       I play various games like Among Us, Roblox and more!
-    </h2>
-    <h3>
-      Subscribe my channel to receive updates
-    </h3>
   </div>
+  <Videos/>
+  <Games/>
 </template>
 
 <script>
+import Games from './Games.vue'
+import Videos from './Videos.vue'
 export default {
   name: 'Homepage',
   props: {
     msg: String
+  },
+  components: {
+    Games,
+    Videos
   }
 }
 </script>
@@ -25,18 +27,7 @@ export default {
 #heropic {
   max-width: 50%;
 }
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+.hello{
+  text-align: center;
 }
 </style>
