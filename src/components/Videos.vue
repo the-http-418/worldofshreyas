@@ -2,7 +2,7 @@
   <div class="videos">
     <h2>Here are some of my latest videos</h2>
     <div v-for="item in urls" :key="item.url">
-        <video-embedd :urlvid="'https://www.youtube.com/embed/'+item.url"/>
+        <video-embedd :urlvid="'https://www.youtube-nocookie.com/embed/'+item.url"/>
     </div>
   </div>
 </template>

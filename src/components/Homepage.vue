@@ -2,6 +2,9 @@
   <div class="hello">
     <img id="heropic" alt="Shreyas Dabbing" src="../assets/shreyasDab.jpg"/>
     <h1>Hi guys, I'm Shreyas!</h1>
+    <h2>I'm a Gamer, YouTuber and Rising Star!</h2>
+    <h2>Make sure you subscribe to my channel</h2>
+    <div class="g-ytsubscribe" data-channelid="UC9WOO_wtTl2OKLl-UtYjzfg" data-layout="full" data-count="default"></div>
   </div>
   <Videos/>
   <Games/>
@@ -18,7 +21,12 @@ export default {
   components: {
     Games,
     Videos
-  }
+  },
+  mounted() {
+    let externalScript = document.createElement('script')
+    externalScript.setAttribute('src', 'https://apis.google.com/js/platform.js')
+    document.head.appendChild(externalScript)
+  },
 }
 </script>
 
@@ -29,5 +37,6 @@ export default {
 }
 .hello{
   text-align: center;
+  padding-bottom: 5%;
 }
 </style>

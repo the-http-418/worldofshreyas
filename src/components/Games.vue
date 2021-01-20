@@ -1,5 +1,5 @@
 <template>
-  <div class="games">
+  <div class="games" id="gamescontainer">
     <h2>Here are some of the games I play</h2>
     <img
       class="gameimg"
@@ -31,5 +31,8 @@ export default {
 }
 .games {
   text-align: center;
+}
+#gamescontainer {
+  margin-top: 5%;
 }
 </style>
