@@ -37,6 +37,6 @@ export default {
 }
 .hello{
   text-align: center;
-  padding-bottom: 5%;
+  /* padding-bottom: 5%; */
 }
 </style>
